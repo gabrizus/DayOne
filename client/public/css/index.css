@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+  --prim : #E8B4B8;
+  --prim-var : #EED6D3;
+  --sec : #A49393;
+  --sec-var : #67595E;
+  --back : #F9F1F0;
+  --surface : #F9F1F0;
+  --err : #900020;
+  --valid : #81B622;
+}
+
+body{
+font-family: 'Inter';
+background-color: var(--back);
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+nav{
+  display: flex;
+  flex-direction: column;
+  max-width: 20vw;
+  max-height: 100vh;
+  height: 100vh;
+  padding: 15px;
+  border-radius: 16px;
+  border: 1px solid black;
+}
+
+nav > a{
+  text-decoration: none;
+  color: var(--sec-var);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  transition: all 200ms ease-in-out;
+}
+
+nav > a > img {
+  margin-top: 10px;
+  max-width: 26px;
+  max-height: 26px;
+}
+
+nav > a:hover {
+  filter: invert(20%);
+  transform: scale(1.15);
+}
+
+
+
+.head{
+  background-color: var(--prim);
+  max-width: 15vw;
+  min-width: 50%;
+  padding: 10px;
+  border-radius: 18px;
+}
+
+.bar{
+  border: 1px solid var(--sec);
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.main-content{
+  width: 70vw;
+  height: 100vh;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.main-content > .head{
+  margin-left: 25%;
+}
+
+.taskCard{
+  max-width: 20vw;
+  max-height: 25vh;
+  padding: 10px;
+  border-radius: 16px;
+  background-color: var(--sec-var);
+}
+
+.level3 {
+  background-color: red;
+  width:26px;
+  height: 26px;
+}

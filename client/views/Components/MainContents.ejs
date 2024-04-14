@@ -1,0 +1,10 @@
+<div class="main-content">
+  <h1 class="head">MainHeader</h1>
+  <div>
+    <% const length = tasks.length; for(i=0; i < tasks.length; i++) { %>
+    <div class="taskCard">
+      <%- include('TaskCard.ejs', tasks[i]) %>
+      <% } %>
+        </div>
+  </div>
+</div>
