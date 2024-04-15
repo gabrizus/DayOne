@@ -79,15 +79,29 @@ nav > a:hover {
 }
 
 .taskCard{
-  max-width: 20vw;
+  max-width: 40vw;
   max-height: 25vh;
   padding: 10px;
   border-radius: 16px;
   background-color: var(--sec-var);
+  margin-left: 21%;
+  margin-bottom: 25px;
+}
+
+ .prio-desc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.desc {
+  max-width: 20vw;
+  max-height: 10vh;
 }
 
 .level3 {
   background-color: red;
   width:26px;
   height: 26px;
+  margin-top: 10px;
 }

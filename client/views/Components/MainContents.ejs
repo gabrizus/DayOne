@@ -1,10 +1,20 @@
 <div class="main-content">
   <h1 class="head">MainHeader</h1>
   <div>
-    <% const length = tasks.length; for(i=0; i < tasks.length; i++) { %>
+    <% tasks.forEach(function(o) { %>
     <div class="taskCard">
-      <%- include('TaskCard.ejs', tasks[i]) %>
-      <% } %>
-        </div>
+        <div>
+          <h1><%= o.task_name.toUpperCase() %></h1>
+          <div class="prio-desc">
+          <p class="desc"><%= o.description %></p>
+          <div class="prio level<%= o.priority_level %>"></div>
+          </div>
+          <div class="createdAt">
+          <% let date =  o.created_at.toString(); let createdAt = date.slice(0,15) %>
+          <%= createdAt %>
+          </div>
+        </div> 
+    </div>
+    <% }) %>
   </div>
 </div>
