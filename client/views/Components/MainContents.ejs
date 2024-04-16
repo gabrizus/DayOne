@@ -13,6 +13,10 @@
           <% let date =  o.created_at.toString(); let createdAt = date.slice(0,15) %>
           <%= createdAt %>
           </div>
+        <div class="buttons">
+          <a href="/deleteTask/<%=o.task_id%>" class="btn neg-btn">Delete</a>
+          <a href="/editTask/<%=o.task_id%>" class="btn edit-btn">Edit</a>
+        </div>
         </div> 
     </div>
     <% }) %>

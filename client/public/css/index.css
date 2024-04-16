@@ -18,12 +18,15 @@ flex-direction: row;
 justify-content: space-between;
 }
 
+
 nav{
+  position: sticky;
+  top: 20px;
   display: flex;
   flex-direction: column;
   max-width: 20vw;
   max-height: 100vh;
-  height: 100vh;
+  height: 100%;
   padding: 15px;
   border-radius: 16px;
   border: 1px solid black;
@@ -65,9 +68,10 @@ nav > a:hover {
   margin-top: 5px;
 }
 
-.main-content{
+.main-content, .addTaskForm{
   width: 70vw;
-  height: 100vh;
+  min-height: 100vh;
+  max-height: 200vh;
   border: 1px solid black;
   padding: 10px;
   border-radius: 16px;
@@ -104,4 +108,44 @@ nav > a:hover {
   width:26px;
   height: 26px;
   margin-top: 10px;
+}
+
+.addTaskForm{
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+form > button {
+  max-width: 10%;
+  max-height: 20%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.buttons{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.neg-btn , .edit-btn{
+  text-decoration: none;
+  max-width: 5vw;
+  max-height: 5vh;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+.neg-btn{
+  background-color: var(--err);
+  color: var(--surface);
+}
+
+.edit-btn {
+  background-color: var(--surface);
+  color: var(--sec-var)
 }
